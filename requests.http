@@ -1,0 +1,30 @@
+POST http://localhost:8080/livros
+Content-Type: application/json
+
+{
+  "titulo": "Clean Code",
+  "autor": "Robert C. Martin",
+  "anoPublicacao": 2008
+}
+
+### Listar todos
+GET http://localhost:8080/livros
+
+### Buscar por id (existe)
+GET http://localhost:8080/livros/1
+
+### Buscar por id (não existe)
+GET http://localhost:8080/livros/99
+
+### Atualizar
+PUT http://localhost:8080/livros/34
+Content-Type: application/json
+
+{
+  "titulo": "Código Limpo",
+  "autor": "Robert C. Martin",
+  "anoPublicacao": 2009
+}
+
+### Excluir
+DELETE http://localhost:8080/livros/34
