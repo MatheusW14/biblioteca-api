@@ -1,3 +1,4 @@
+### Cadastrar: Clean Code
 POST http://localhost:8080/livros
 Content-Type: application/json
 
@@ -5,6 +6,36 @@ Content-Type: application/json
   "titulo": "Clean Code",
   "autor": "Robert C. Martin",
   "anoPublicacao": 2008
+}
+
+### Cadastrar: Domain-Driven Design
+POST http://localhost:8080/livros
+Content-Type: application/json
+
+{
+  "titulo": "Domain-Driven Design",
+  "autor": "Eric Evans",
+  "anoPublicacao": 2003
+}
+
+### Cadastrar: The Pragmatic Programmer
+POST http://localhost:8080/livros
+Content-Type: application/json
+
+{
+  "titulo": "The Pragmatic Programmer",
+  "autor": "Andrew Hunt e David Thomas",
+  "anoPublicacao": 1999
+}
+
+### Cadastrar: Refactoring
+POST http://localhost:8080/livros
+Content-Type: application/json
+
+{
+  "titulo": "Refactoring",
+  "autor": "Martin Fowler",
+  "anoPublicacao": 1999
 }
 
 ### Listar todos
@@ -27,4 +58,4 @@ Content-Type: application/json
 }
 
 ### Excluir
-DELETE http://localhost:8080/livros/34
+DELETE http://localhost:8080/livros/99
